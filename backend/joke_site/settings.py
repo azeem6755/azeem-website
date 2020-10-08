@@ -81,6 +81,17 @@ DATABASES = {
 }
 
 
+#API calls
+JOKE_URL = 'https://jokeapi-v2.p.rapidapi.com'
+JOKE_APIS = {
+    "get_joke": f'{JOKE_URL}/joke/',
+    'info': f'{JOKE_URL}/info/',
+    'submit_joke': f'{JOKE_URL}/submit/',
+    'x-rapidapi-key': '30bb35331amsh3958f2aa30014afp148526jsn4642307a7489'
+}
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -118,3 +129,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
