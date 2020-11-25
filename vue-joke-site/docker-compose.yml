@@ -2,7 +2,7 @@ version: '3.7'
 
 services: 
     app:
-        build: .
+        image: 'my_website:latest'
         ports: 
             - 5000:8080
         command: 'npm run serve'

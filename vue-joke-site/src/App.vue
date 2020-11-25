@@ -1,27 +1,24 @@
 <template>
-  <div id="app">
-    <front-page title="Custom Component"/>
-  </div>
+  <v-app>
+    
+    <v-main>
+      <home/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import FrontPage from './components/FrontPage.vue'
+import Home from './components/Home'
 
 export default {
   name: 'App',
-  components: {
-    FrontPage
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    'home': Home
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
