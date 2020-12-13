@@ -17,6 +17,14 @@
                 <div class="cover-pic">
                     <img src="@/assets/coverpic.jpg" style="height: 100%; width: 100%"/>
                 </div>
+                <div class="social-links">
+                    <ul id="social-list">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-reddit"></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-lg-2 right-container">
                 dd
@@ -53,8 +61,12 @@ export default {
         border: 0.1em black solid;
         text-align: center;
         padding: 0.5em 1em;
+        margin: 0 0 1.5em 0;
     }
     .title-text {
         font-size: 48px;
+    }
+    #social-list {
+        display: inline;
     }
 </style>
