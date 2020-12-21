@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VueLodash from 'vue-lodash'
+import Router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -17,7 +18,9 @@ Vue.use(VueAxios, axios)
 Vue.use(bootstrap)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueLodash, { name: 'custom' , lodash: lodash })
+
 new Vue({
   vuetify,
+  router: Router,
   render: h => h(App)
 }).$mount('#app')
